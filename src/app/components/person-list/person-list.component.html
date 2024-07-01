@@ -1,0 +1,18 @@
+<p>person-list works!</p>
+<!--<ul>
+  <li *ngFor="let person of people" (click)="viewDetails(person.id)">
+    {{ person.fullName }}
+  </li>
+</ul>-->
+
+<ul>
+  <li *ngFor="let person of paginatedPeople" (click)="viewDetails(person.id)">
+    {{ person.fullName }}
+  </li>
+</ul>
+<div class="paging-controls">
+  <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+  <span>Page {{ currentPage }} of {{ totalPages }}</span>
+  <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+</div>
+

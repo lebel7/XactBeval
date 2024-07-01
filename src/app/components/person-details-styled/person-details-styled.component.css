@@ -1,0 +1,13 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .person-card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  

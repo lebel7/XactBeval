@@ -1,0 +1,15 @@
+.paging-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .paging-controls button {
+    margin: 0 5px;
+  }
+  
+  .paging-controls span {
+    margin: 0 10px;
+  }
+  

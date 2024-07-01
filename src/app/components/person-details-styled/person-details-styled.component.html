@@ -1,0 +1,10 @@
+<p>person-details-styled works!</p>
+<div class="card-container">
+    <div *ngFor="let person of paginatedPeople" class="person-card mat-elevation-z4">
+      <h3>{{ person.title }} {{ person.forename }} {{ person.surname }}</h3>
+      <p>Job Title: {{ person.jobTitle }}</p>
+      <p>Town: {{ person.town }}</p>
+    </div>
+    <mat-paginator [length]="people.length" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]" (page)="pageChanged($event)"></mat-paginator>
+  </div>
+  
